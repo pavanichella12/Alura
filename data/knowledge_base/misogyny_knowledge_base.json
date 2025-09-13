@@ -1,0 +1,206 @@
+{
+  "categories": {
+    "derogatory_terms": {
+      "description": "Direct insults and derogatory terms used against women",
+      "words": [
+        "bitch", "slut", "whore", "skank", "tramp", "hoe", "thot", "slutty", "whorish", "cunt", "skanky"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's such a bitch for not agreeing with me",
+          "That slut deserves what she gets",
+          "All women are whores"
+        ],
+        "reclaimed": [
+          "I'm a bad bitch who gets things done",
+          "Slay queen, you're killing it"
+        ]
+      },
+      "alternatives": [
+        "strong woman", "confident person", "determined individual", "assertive woman"
+      ]
+    },
+    "devaluing_language": {
+      "description": "Terms that diminish women's qualities or achievements",
+      "words": [
+        "bossy", "abrasive", "emotional", "hysterical", "irrational", "overly sensitive", "dramatic", "difficult", "demanding"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's so bossy, no one likes her",
+          "Don't be so emotional about it",
+          "She's being hysterical over nothing"
+        ],
+        "acceptable": [
+          "She's assertive and gets things done",
+          "She's passionate about her work"
+        ]
+      },
+      "alternatives": [
+        "assertive", "passionate", "expressive", "enthusiastic", "dedicated", "focused", "determined"
+      ]
+    },
+    "stereotypical_portrayals": {
+      "description": "Phrases that reinforce harmful gender stereotypes",
+      "words": [
+        "run like a girl", "act like a lady", "be more feminine", "man up", "boys will be boys", "cry like a girl", "throw like a girl", "fight like a girl", "play like a girl", "sit nicely and quietly", "be ladylike", "be demure"
+      ],
+      "context_examples": {
+        "offensive": [
+          "You run like a girl",
+          "Act like a lady and be quiet",
+          "Boys will be boys, they can't help it",
+          "Don't cry like a girl",
+          "Girls should sit nicely and quietly"
+        ],
+        "acceptable": [
+          "She runs with determination",
+          "She carries herself with confidence"
+        ]
+      },
+      "alternatives": [
+        "run with determination", "be confident", "show strength", "be yourself", "be strong", "be brave"
+      ]
+    },
+    "objectification": {
+      "description": "Language that reduces women to physical objects",
+      "words": [
+        "hot", "sexy", "attractive", "beautiful", "gorgeous", "stunning", "hot babe", "babe", "doll", "sweetie", "honey", "cutie", "pretty", "cute"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's so hot, I'd tap that",
+          "Look at that hot babe over there",
+          "She's attractive, but can she do the job?",
+          "What a cutie"
+        ],
+        "acceptable": [
+          "She's a talented professional",
+          "Her work speaks for itself"
+        ]
+      },
+      "alternatives": [
+        "talented", "skilled", "professional", "capable", "competent", "intelligent", "accomplished"
+      ]
+    },
+    "achievement_undermining": {
+      "description": "Terms that diminish women's professional achievements",
+      "words": [
+        "girlboss", "diversity hire", "quota hire", "good girl", "sweetie", "honey", "dear", "darling", "miss", "young lady"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's just a diversity hire",
+          "Good girl, you did well",
+          "Sweetie, let me explain this to you",
+          "Young lady, you should know better"
+        ],
+        "acceptable": [
+          "She earned her position through hard work",
+          "Her qualifications speak for themselves"
+        ]
+      },
+      "alternatives": [
+        "leader", "professional", "expert", "specialist", "manager", "colleague", "peer"
+      ]
+    },
+    "relationship_defining": {
+      "description": "Terms that define women by their relationships to men or children",
+      "words": [
+        "spinster", "barren", "housewife", "soccer mom", "mama", "mommy", "wife", "girlfriend", "miss", "mrs", "old maid", "unmarried", "childless"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's just a housewife",
+          "Poor spinster, never married",
+          "She's barren, no children",
+          "Just a soccer mom"
+        ],
+        "acceptable": [
+          "She's a dedicated parent",
+          "She chose to focus on her career"
+        ]
+      },
+      "alternatives": [
+        "professional", "individual", "person", "colleague", "peer", "expert"
+      ]
+    },
+    "infantilizing_language": {
+      "description": "Language that treats women like children",
+      "words": [
+        "good girl", "sweetie", "honey", "dear", "darling", "cutie", "little lady", "young lady", "girl", "baby", "sweetheart"
+      ],
+      "context_examples": {
+        "offensive": [
+          "Good girl, you did well",
+          "Sweetie, let me explain this to you",
+          "Little lady, you should know better",
+          "That's a good girl"
+        ],
+        "acceptable": [
+          "Well done on your presentation",
+          "Great work on the project"
+        ]
+      },
+      "alternatives": [
+        "colleague", "professional", "peer", "person", "individual"
+      ]
+    },
+    "sexualization": {
+      "description": "Unsolicited comments about women's physical appearance or body",
+      "words": [
+        "hot", "sexy", "attractive", "beautiful", "gorgeous", "stunning", "hot babe", "babe", "doll", "pretty", "cute", "smile", "dress appropriately", "wear something nice"
+      ],
+      "context_examples": {
+        "offensive": [
+          "She's so hot, I'd tap that",
+          "Why don't you smile more?",
+          "Dress appropriately for the office",
+          "You should wear something nice"
+        ],
+        "acceptable": [
+          "She's a talented professional",
+          "Her work speaks for itself"
+        ]
+      },
+      "alternatives": [
+        "talented", "skilled", "professional", "capable", "competent", "intelligent"
+      ]
+    },
+    "dismissive_language": {
+      "description": "Language that dismisses women's feelings, arguments, or experiences",
+      "words": [
+        "emotional", "hysterical", "irrational", "overly sensitive", "dramatic", "drama queen", "crazy", "nuts", "psycho", "overreacting", "making a fuss", "being difficult"
+      ],
+      "context_examples": {
+        "offensive": [
+          "Don't be so emotional about it",
+          "She's being hysterical over nothing",
+          "You're overreacting",
+          "Stop being so dramatic"
+        ],
+        "acceptable": [
+          "I understand your concerns",
+          "Let's discuss this calmly"
+        ]
+      },
+      "alternatives": [
+        "passionate", "concerned", "thoughtful", "considerate", "caring", "expressive"
+      ]
+    }
+  },
+  "guidelines": {
+    "context_matters": "The same word can be offensive or acceptable depending on context",
+    "power_dynamics": "Consider the relationship and power dynamics between speakers",
+    "intent_vs_impact": "Focus on the impact of words, not just the intent",
+    "intersectionality": "Consider how race, class, and other factors intersect with gender",
+    "reclaimed_language": "Some words have been reclaimed by women, but context is crucial",
+    "professional_environment": "Language that might be acceptable socially can be inappropriate professionally"
+  },
+  "training_materials": {
+    "impact_explanation": "Misogynistic language reinforces harmful stereotypes and contributes to gender inequality. It creates hostile environments and limits women's opportunities.",
+    "workplace_impact": "Such language can create hostile work environments, limit women's advancement opportunities, and contribute to gender pay gaps.",
+    "psychological_impact": "Regular exposure to misogynistic language can affect women's self-esteem, mental health, and sense of belonging in professional and social spaces.",
+    "social_impact": "Misogynistic language normalizes discrimination and contributes to broader societal gender inequality."
+  }
+} 

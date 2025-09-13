@@ -1,0 +1,255 @@
+{
+  "total_samples": 63316,
+  "misogyny_samples": 26889,
+  "non_misogyny_samples": 36426,
+  "misogyny_ratio": 0.4246793859372039,
+  "avg_text_length": 142.611441025965,
+  "min_text_length": 1,
+  "max_text_length": 18148,
+  "sources": {
+    "gab_hate": 27553,
+    "labeled_data": 24783,
+    "final_labels": 6567,
+    "manual_tag": 2286,
+    "dev_set": 2000,
+    "huggingface": 127
+  },
+  "categories": {
+    "non_hate": 23565,
+    "offensive": 19190,
+    "non_misogyny": 7185,
+    "hate_speech": 5418,
+    "neither": 4163,
+    "misogyny": 1795,
+    "none": 1514,
+    "2. derogation": 227,
+    "3. animosity": 167,
+    "4. prejudiced discussions": 48,
+    "1. threats, plans to harm and incitement": 44
+  },
+  "dataset_stats": {
+    "manual_tag": {
+      "rows": 2286,
+      "columns": [
+        "Definition",
+        "is_misogyny"
+      ],
+      "sample_data": [
+        {
+          "Definition": "Ur gonna die... queer",
+          "is_misogyny": 0.0
+        },
+        {
+          "Definition": "Valuptuous man boobs.",
+          "is_misogyny": 0.0
+        }
+      ]
+    },
+    "dev_set": {
+      "rows": 2000,
+      "columns": [
+        "rewire_id",
+        "text",
+        "label_sexist",
+        "label_category",
+        "label_vector",
+        "split"
+      ],
+      "sample_data": [
+        {
+          "rewire_id": "sexism2022_english-9609",
+          "text": "In Nigeria, if you rape a woman, the men rape you back! #NSFW \"In Nigeria, if you rape a woman, guys rape you back!\" by [USER] [URL]",
+          "label_sexist": "not sexist",
+          "label_category": "none",
+          "label_vector": "none",
+          "split": "dev"
+        },
+        {
+          "rewire_id": "sexism2022_english-966",
+          "text": "I bet she wished she had a gun",
+          "label_sexist": "not sexist",
+          "label_category": "none",
+          "label_vector": "none",
+          "split": "dev"
+        }
+      ]
+    },
+    "gab_hate": {
+      "rows": 86529,
+      "columns": [
+        "ID",
+        "Annotator",
+        "Text",
+        "Hate",
+        "HD",
+        "CV",
+        "VO",
+        "REL",
+        "RAE",
+        "SXO",
+        "GEN",
+        "IDL",
+        "NAT",
+        "POL",
+        "MPH",
+        "EX",
+        "IM"
+      ],
+      "sample_data": [
+        {
+          "ID": 27044,
+          "Annotator": 4,
+          "Text": "Ah the PSYOPS antifa crew is back. That\u00e2\u0080\u0099s how I know we are winning.",
+          "Hate": 0,
+          "HD": 0,
+          "CV": 0,
+          "VO": 0,
+          "REL": NaN,
+          "RAE": NaN,
+          "SXO": NaN,
+          "GEN": NaN,
+          "IDL": NaN,
+          "NAT": NaN,
+          "POL": NaN,
+          "MPH": NaN,
+          "EX": NaN,
+          "IM": NaN
+        },
+        {
+          "ID": 27044,
+          "Annotator": 15,
+          "Text": "Ah the PSYOPS antifa crew is back. That\u00e2\u0080\u0099s how I know we are winning.",
+          "Hate": 0,
+          "HD": 0,
+          "CV": 0,
+          "VO": 0,
+          "REL": NaN,
+          "RAE": NaN,
+          "SXO": NaN,
+          "GEN": NaN,
+          "IDL": NaN,
+          "NAT": NaN,
+          "POL": NaN,
+          "MPH": NaN,
+          "EX": NaN,
+          "IM": NaN
+        }
+      ]
+    },
+    "labeled_data": {
+      "rows": 24783,
+      "columns": [
+        "Unnamed: 0",
+        "count",
+        "hate_speech",
+        "offensive_language",
+        "neither",
+        "class",
+        "tweet"
+      ],
+      "sample_data": [
+        {
+          "Unnamed: 0": 0,
+          "count": 3,
+          "hate_speech": 0,
+          "offensive_language": 0,
+          "neither": 3,
+          "class": 2,
+          "tweet": "!!! RT @mayasolovely: As a woman you shouldn't complain about cleaning up your house. &amp; as a man you should always take the trash out..."
+        },
+        {
+          "Unnamed: 0": 1,
+          "count": 3,
+          "hate_speech": 0,
+          "offensive_language": 3,
+          "neither": 0,
+          "class": 1,
+          "tweet": "!!!!! RT @mleew17: boy dats cold...tyga dwn bad for cuffin dat hoe in the 1st place!!"
+        }
+      ]
+    },
+    "final_labels": {
+      "rows": 6567,
+      "columns": [
+        "entry_id",
+        "link_id",
+        "parent_id",
+        "entry_utc",
+        "subreddit",
+        "author",
+        "body",
+        "image",
+        "label_date",
+        "week",
+        "group",
+        "sheet_order",
+        "level_1",
+        "level_2",
+        "level_3",
+        "strength",
+        "highlight",
+        "split"
+      ],
+      "sample_data": [
+        {
+          "entry_id": "exoxn7",
+          "link_id": "t3_exoxn7",
+          "parent_id": NaN,
+          "entry_utc": 1580652620,
+          "subreddit": "badwomensanatomy",
+          "author": "doggodone",
+          "body": "Do you have the skin of a 80 year old grandma? Worry no more, just drink water!",
+          "image": "Yes",
+          "label_date": "17-02-2020",
+          "week": 1,
+          "group": 1,
+          "sheet_order": "(1,)",
+          "level_1": "Nonmisogynistic",
+          "level_2": "None_of_the_categories",
+          "level_3": NaN,
+          "strength": NaN,
+          "highlight": NaN,
+          "split": "train"
+        },
+        {
+          "entry_id": "fgb3bdv",
+          "link_id": "t3_exoxn7",
+          "parent_id": "t3_exoxn7",
+          "entry_utc": 1580658139,
+          "subreddit": "badwomensanatomy",
+          "author": "Machaeon",
+          "body": "This is taking a grain of truth and extrapolating to insanity.\n\nStay hydrated, it's healthy, you'll look and feel better. It will not reverse the aging process though.",
+          "image": NaN,
+          "label_date": "17-02-2020",
+          "week": 1,
+          "group": 1,
+          "sheet_order": "(1, 1)",
+          "level_1": "Nonmisogynistic",
+          "level_2": "None_of_the_categories",
+          "level_3": NaN,
+          "strength": NaN,
+          "highlight": NaN,
+          "split": "train"
+        }
+      ]
+    },
+    "huggingface": {
+      "train_rows": 127,
+      "test_rows": 43,
+      "columns": [
+        "text",
+        "label"
+      ],
+      "sample_data": [
+        {
+          "text": "Men are better at sports.",
+          "label": 1
+        },
+        {
+          "text": "Women have the same physical and mental capabilities as men to participate in extreme sports.",
+          "label": 0
+        }
+      ]
+    }
+  }
+}

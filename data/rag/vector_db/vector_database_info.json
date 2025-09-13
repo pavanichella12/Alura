@@ -1,0 +1,11 @@
+{
+  "database_name": "misogyny_detection_db",
+  "collection_name": "misogyny_chunks",
+  "stats": {
+    "total_items": 74664,
+    "misogyny_count": 31403,
+    "non_misogyny_count": 43261,
+    "misogyny_ratio": 0.4205909139612129
+  },
+  "setup_time": "2025-08-02 19:09:14"
+}

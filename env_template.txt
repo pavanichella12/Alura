@@ -1,0 +1,63 @@
+# AI Content Moderation System - Environment Configuration Template
+# Copy this file to .env and fill in your actual values
+
+# =============================================================================
+# TWILIO WHATSAPP CONFIGURATION (Optional - for notifications)
+# =============================================================================
+# Get these from: https://console.twilio.com/
+# Only needed if you want WhatsApp notifications for challenges
+TWILIO_ACCOUNT_SID=your_twilio_account_sid_here
+TWILIO_AUTH_TOKEN=your_twilio_auth_token_here
+TWILIO_PHONE=+14155238886
+REVIEWER_PHONE=+15714733917
+
+# =============================================================================
+# SYSTEM CONFIGURATION
+# =============================================================================
+# Debug mode (true/false) - shows detailed logs
+DEBUG_MODE=false
+
+# Log level (DEBUG, INFO, WARNING, ERROR)
+LOG_LEVEL=INFO
+
+# =============================================================================
+# AI MODEL CONFIGURATION
+# =============================================================================
+# Ollama model to use (default: llama3:8b)
+OLLAMA_MODEL=llama3:8b
+
+# Ollama server URL (default: http://localhost:11434)
+OLLAMA_URL=http://localhost:11434
+
+# =============================================================================
+# DATABASE CONFIGURATION
+# =============================================================================
+# Database file path (default: data/database/content_moderation.db)
+DB_PATH=data/database/content_moderation.db
+
+# =============================================================================
+# APPLICATION CONFIGURATION
+# =============================================================================
+# Streamlit port (default: 8501)
+STREAMLIT_PORT=8501
+
+# Maximum message length (default: 1000)
+MAX_MESSAGE_LENGTH=1000
+
+# =============================================================================
+# SECURITY CONFIGURATION
+# =============================================================================
+# Enable/disable user challenge system (true/false)
+ENABLE_CHALLENGES=true
+
+# Maximum violations before training required (default: 3)
+MAX_VIOLATIONS=3
+
+# =============================================================================
+# NOTIFICATION CONFIGURATION
+# =============================================================================
+# Enable/disable notifications (true/false)
+ENABLE_NOTIFICATIONS=true
+
+# Notification timeout in seconds (default: 30)
+NOTIFICATION_TIMEOUT=30
