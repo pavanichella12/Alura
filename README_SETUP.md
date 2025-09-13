@@ -169,20 +169,7 @@ The `.env` file contains optional configuration:
 
 ---
 
-## 📞 Support
-
-### For Technical Issues
-1. Check the troubleshooting section above
-2. Verify all requirements are met
-3. Try running `python setup.py` again
-4. Check the console output for error messages
-
-### For Business Questions
-- Contact your system administrator
-- Refer to the main project documentation
-
----
-
+##
 ## 🚀 Advanced Usage
 
 ### Custom Configuration
@@ -235,19 +222,3 @@ For production use, consider:
 
 ---
 
-## 🎉 Success!
-
-If you've reached this point, your AI Content Moderation System is ready to use!
-
-**Next Steps:**
-1. Test the system with different messages
-2. Explore the admin panel features
-3. Try the user switching functionality
-4. Test the challenge system
-5. Review the training module
-
-**Remember**: This system is designed to be intelligent and context-aware. It should block genuinely problematic content while allowing appropriate language use.
-
----
-
-*For more technical details, see the main README.md file.*
