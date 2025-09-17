@@ -16,24 +16,28 @@ A sophisticated AI-powered content moderation system that combines **Knowledge I
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.9+
-- 8GB+ RAM (16GB recommended)
+- Python 3.8+ (any operating system)
+- 4GB+ RAM (8GB recommended)
 - Internet connection (for initial setup)
 
-### One-Command Setup
+### Super Easy Setup (5 minutes)
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/ai-content-moderation.git
-cd ai-content-moderation
+# 1. Clone the repository
+git clone https://github.com/pavanichella12/Alura.git
+cd Alura
 
-# Run automated setup
-python setup.py
+# 2. Run automated setup (does everything!)
+python3 setup.py
 
-# Start the demo
-python run_demo.py
+# 3. Start the system
+./run_demo.sh    # Mac/Linux
+# OR double-click run_demo.bat on Windows
 ```
 
-The application will open at: **http://localhost:8501**
+**The application will open at: http://localhost:8501**
+
+### For Managers - Even Easier
+See **[MANAGER_LOCAL_SETUP.md](MANAGER_LOCAL_SETUP.md)** for super simple instructions.
 
 ## 📖 Detailed Setup
 

@@ -55,21 +55,20 @@ class SystemSetup:
         print("📦 Installing Ollama...")
         
         if self.system == "darwin":  # macOS
-            try:
-                # Download and install Ollama for macOS
-                subprocess.run(['curl', '-fsSL', 'https://ollama.ai/install.sh'], 
-                             stdout=subprocess.PIPE, text=True, check=True)
-                subprocess.run(['sh', '-c', 'curl -fsSL https://ollama.ai/install.sh | sh'], 
-                             check=True)
-                print("✅ Ollama installed successfully")
-                return True
-            except subprocess.CalledProcessError as e:
-                print(f"❌ Failed to install Ollama: {e}")
-                print("Please install Ollama manually from: https://ollama.ai/")
-                return False
+            print("🍎 Detected macOS - Ollama requires manual installation")
+            print("📥 Please download and install Ollama from: https://ollama.ai/")
+            print("   1. Go to https://ollama.ai/")
+            print("   2. Click 'Download for macOS'")
+            print("   3. Install the .dmg file")
+            print("   4. Run this setup script again")
+            print()
+            print("⚠️  The system will work without Ollama (using fallback mode)")
+            print("   But for full AI functionality, please install Ollama manually.")
+            return False
                 
         elif self.system == "linux":
             try:
+                print("🐧 Detected Linux - Installing Ollama automatically...")
                 subprocess.run(['curl', '-fsSL', 'https://ollama.ai/install.sh', '|', 'sh'], 
                              shell=True, check=True)
                 print("✅ Ollama installed successfully")
@@ -80,9 +79,15 @@ class SystemSetup:
                 return False
                 
         elif self.system == "windows":
-            print("❌ Windows installation not automated yet.")
-            print("Please download and install Ollama from: https://ollama.ai/")
-            print("Then run this setup script again.")
+            print("🪟 Detected Windows - Ollama requires manual installation")
+            print("📥 Please download and install Ollama from: https://ollama.ai/")
+            print("   1. Go to https://ollama.ai/")
+            print("   2. Click 'Download for Windows'")
+            print("   3. Install the .exe file")
+            print("   4. Run this setup script again")
+            print()
+            print("⚠️  The system will work without Ollama (using fallback mode)")
+            print("   But for full AI functionality, please install Ollama manually.")
             return False
         
         return False
@@ -306,29 +311,59 @@ streamlit run app.py --server.port 8501
         """Run the complete setup process"""
         self.print_header()
         
-        steps = [
+        # Core setup steps (must succeed)
+        core_steps = [
             ("Python Version Check", self.check_python_version),
             ("Create Directories", self.create_directories),
             ("Create Virtual Environment", self.create_virtual_environment),
             ("Install Python Dependencies", self.install_python_dependencies),
-            ("Check Ollama Installation", self.check_ollama_installed),
-            ("Download Llama Model", self.download_llama_model),
             ("Create Environment Template", self.create_env_template),
             ("Create Run Script", self.create_run_script),
-            ("Test System", self.test_system)
         ]
         
-        for step_name, step_func in steps:
+        # Optional steps (can fail gracefully)
+        optional_steps = [
+            ("Check Ollama Installation", self.check_ollama_installed),
+            ("Download Llama Model", self.download_llama_model),
+        ]
+        
+        # Run core steps first
+        for step_name, step_func in core_steps:
             print(f"\n📋 {step_name}...")
             if not step_func():
                 print(f"❌ Setup failed at: {step_name}")
                 print("\n🔧 Manual setup required. Please check the README.md for instructions.")
                 return False
         
-        print("\n" + "=" * 60)
-        print("🎉 SETUP COMPLETE!")
-        print("=" * 60)
-        print("✅ Your AI Content Moderation System is ready!")
+        # Run optional steps (don't fail if they don't work)
+        ollama_working = True
+        for step_name, step_func in optional_steps:
+            print(f"\n📋 {step_name}...")
+            if not step_func():
+                print(f"⚠️  {step_name} failed - system will use fallback mode")
+                ollama_working = False
+                break
+        
+        # Test the system
+        print(f"\n📋 Testing System...")
+        if not self.test_system():
+            print("⚠️  System test failed - but basic functionality should work")
+        
+        # Show final status
+        if ollama_working:
+            print("\n" + "=" * 60)
+            print("🎉 SETUP COMPLETE!")
+            print("=" * 60)
+            print("✅ Your AI Content Moderation System is ready!")
+            print("✅ Full AI functionality available (Ollama + Llama 3)")
+        else:
+            print("\n" + "=" * 60)
+            print("🎉 SETUP COMPLETE!")
+            print("=" * 60)
+            print("✅ Your AI Content Moderation System is ready!")
+            print("⚠️  Running in fallback mode (keyword matching)")
+            print("📥 To enable full AI: Install Ollama from https://ollama.ai/")
+        
         print()
         print("🚀 To start the system:")
         if self.system == "windows":
