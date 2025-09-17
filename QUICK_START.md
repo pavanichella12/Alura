@@ -1,9 +1,7 @@
-# 🚀 Super Easy Local Setup for Manager
+# 🚀 Quick Start Guide
 ## AI Content Moderation System
 
-**For: [Manager's Name]**  
-**From: [Your Name]**  
-**Goal: Run the AI system on your local computer in 5 minutes**
+**Run the AI system on your computer in 5 minutes!**
 
 ---
 
@@ -52,26 +50,6 @@ python3 setup.py
 ### **Step 4: Open Your Browser**
 - **Go to:** http://localhost:8501
 - **The AI system is now running!**
-
----
-
-## 🎯 **What the Setup Script Does Automatically:**
-
-### **✅ Installs Everything:**
-- **Python virtual environment**
-- **All required packages**
-- **Project directories**
-- **Configuration files**
-
-### **✅ Handles Ollama (AI Engine):**
-- **Windows/macOS:** Gives you instructions to install manually
-- **Linux:** Installs automatically
-- **Fallback mode:** System works even without Ollama
-
-### **✅ Creates Easy Run Script:**
-- **One-click startup** for your system
-- **Automatic service management**
-- **Easy to stop/start**
 
 ---
 
